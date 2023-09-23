@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sergio Pinto - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Sergio Pinto
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          serrique@icloud.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +15862308439
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="#about-me">About Me</a>
+          <a class="topmenu" href="#skills">Skills</a>
+          <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#recomendation">Recomendations</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="https://media.licdn.com/dms/image/C4E03AQGjT4Z5Mwdxsw/profile-displayphoto-shrink_200_200/0/1649209231800?e=1700697600&v=beta&t=aj4xvABcMTS6hvIhAZeWhG_XoNUQnd_X2HOAT2MZYag" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Sergio Pinto! <img src="https://twemoji.maxcdn.com/2/72x72/1f44b.png" width="60px"/>
+          </h1>
+          <p>
+            I am an experienced Senior Engineer and Project Manager specializing in automotive engineering, 
+            with a proven track record of success spanning over 15+ years. 
+            I am adept at leading and delivering complex global projects, driving innovation, 
+            and efficiency in the automotive industry with cross functional skills in manufacturing process, 
+            product development, and lean manufacturing. I have solid experience in project leadership, 
+            project planning, project communications, risk mitigation, scope management, issue management, 
+            resource management, and quality assurance.
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h6>HTML</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h6>JavaScript</h6>
+          <p>1 year experience</p>
+        </div>  
+
+        <div class="skill">
+            <img src="https://th.bing.com/th?id=OIP.yUIb5S_kj98Eg5tT-Onx1AHaHa&w=250&h=250&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"/>
+            <h6>CSS</h6>
+            <p>1 year experience</p>
+          </div>
+
+        <div class="skill">
+            <img src="https://th.bing.com/th?id=OIP.scZtKzM0T-sPYZxYBAJvRAHaIO&w=237&h=263&c=8&rs=1&qlt=90&o=6&pid=3.1&rm=2"/>
+            <h6>Python</h6>
+            <p>1 year experience</p>
+          </div>
+        
+        
+        
+          <!-- Add more skills here -->
+
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Interest Rate Calculator</h3>
+            <ul>
+              <li>I have developed a web-based interest rate calculator using HTML, CSS, and JavaScript, providing users with a convenient and intuitive tool to calculate interest rates for various financial scenarios.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Personal Website</h3>
+            <ul>
+              <li>I have designed a personal website using HTML, CSS, and JavaScript, creating a digital platform to showcase my portfolio, share my interests, and connect with a global audience.</li>
+            </ul>
+          </div>
+          
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I worked along with Sergio as a peer for 5 years. 
+          During this period Sergio always had an outstanding performance from simplest to most complex tasks. 
+          He always showed commitment and accountability to all team's goals. 
+          Definitely I recommend Mr. Sergio.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Sergio is a highly skilled professional, dynamic, has great skills to work in a team and has ease in communication. 
+          He is graduated in Mechanical Engineering and has extensive experience in the dimensional quality and suppliers auditing areas. 
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Sergio is a enthusiastic professional, always looking for new technologies and very smart. 
+          In my concept the best caracteristic of Sergio is to be pacient and his power to work under pression.
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" width="63px">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M15 11.25l-3-3m0 0l-3 3m3-3v7.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+          </svg>
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3>Thanks for leaving a recommendation!</h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
